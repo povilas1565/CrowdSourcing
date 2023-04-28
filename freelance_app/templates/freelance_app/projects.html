@@ -1,0 +1,21 @@
+{% extends "freelance_app/base.html" %}
+{% block content %}
+{% if user.is_authenticated %}
+    {% for project in projects %}
+    
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="{% url 'profile'%}">Posted by: {{ project.Owner }}</a><br>
+              <small class="text-muted">Posted On: {{ project.postedOn|date:"F d, Y" }}</small>
+            </div>
+            <h2><a class="article-title" href="{% url 'project-detail' project.id %}">{{ project.project_name }}</a></h2>
+            <p class="article-content">Description: {{ project.description }}</p>
+            <p class="article-content">Due by: {{ project.deadline }}</p>
+            <p class="article-content">Attachments: {{ project.attachments }}</p>
+          </div>
+        </article>
+        
+    {% endfor %}
+    {% endif %}
+{% endblock content %}
