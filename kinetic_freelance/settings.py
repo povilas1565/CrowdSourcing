@@ -49,8 +49,7 @@ INSTALLED_APPS = [
 
 
     # providers enabled:
-    'allauth.socialaccount.providers.google',
-    'allauth.socialaccount.providers.linkedin_oauth2',
+    'allauth.socialaccount.providers.google'
 
 ]
 
@@ -63,9 +62,8 @@ SOCIALACCOUNT_PROVIDERS = {
         # (``socialaccount`` app) containing the required client
         # credentials, or list them here:
         'APP': {
-            'client_id': '643086416054-5uqa120uthk9u99nkr23t3r9i3gp7anf.apps.googleusercontent.com',
-            'secret': 'qShTF7Uk5KGAnejrRD8M13Uf',
-            'key': ''
+            'client_id': '676363920520-bkhd6s1v3l3t2dima9j6l1agl3a2i5ts.apps.googleusercontent.com',
+            'secret': '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'
         }
     }
 }
