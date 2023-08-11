@@ -45,8 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',  
-    
+    'allauth.socialaccount',
+
 
     # providers enabled:
     'allauth.socialaccount.providers.google',
@@ -119,10 +119,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'kinetic_freelance',
-        'USER': 'komo',
-        'PASSWORD': 'kineticfreelance',
+        'USER': 'postgres',
+        'PASSWORD': 'root',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': '5432',
     }
 }
 
